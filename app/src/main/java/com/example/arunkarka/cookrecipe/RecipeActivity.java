@@ -15,7 +15,7 @@ public class RecipeActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe);
 
-        findViewById(R.id.dummy_button).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.bonus_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startBonusActivity();
