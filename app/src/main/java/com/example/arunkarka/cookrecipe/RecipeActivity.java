@@ -4,7 +4,6 @@ import com.example.arunkarka.cookrecipe.util.SystemUiHider;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -18,7 +17,7 @@ import android.view.View;
  *
  * @see SystemUiHider
  */
-public class FirstActivity extends Activity {
+public class RecipeActivity extends Activity {
     /**
      * Whether or not the system UI should be auto-hidden after
      * {@link #AUTO_HIDE_DELAY_MILLIS} milliseconds.
@@ -51,7 +50,7 @@ public class FirstActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_first);
+        setContentView(R.layout.activity_recipe);
 
         final View controlsView = findViewById(R.id.fullscreen_content_controls);
         final View contentView = findViewById(R.id.fullscreen_content);
@@ -114,12 +113,6 @@ public class FirstActivity extends Activity {
         // operations to prevent the jarring behavior of controls going away
         // while interacting with the UI.
         findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
-        findViewById(R.id.dummy_button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startRecipeActivity();
-            }
-        });
     }
 
     @Override
@@ -163,10 +156,5 @@ public class FirstActivity extends Activity {
     private void delayedHide(int delayMillis) {
         mHideHandler.removeCallbacks(mHideRunnable);
         mHideHandler.postDelayed(mHideRunnable, delayMillis);
-    }
-
-    private void startRecipeActivity(){
-        Intent intent = new Intent(this, RecipeActivity.class);
-        startActivity(intent);
     }
 }
