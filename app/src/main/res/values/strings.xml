@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">Cook Recipe</string>
 
-    <string name="title_activity_first">FirstActivity</string>
+    <string name="title_activity_first">Cook A Recipe!</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
 
-    <string name="title_activity_recipe">RecipeActivity</string>
+    <string name="title_activity_recipe">Cook Salsa</string>
 
-    <string name="title_activity_bonus">BonusActivity</string>
+    <string name="title_activity_bonus">Get Bonus Points</string>
 </resources>
