@@ -35,7 +35,7 @@ public class FirstActivity extends ActionBarActivity {
         listview.setAdapter(adapter);
 
 
-        findViewById(R.id.dummy_button).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.begin_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startRecipeActivity();
