@@ -16,5 +16,12 @@
     <string name="assigned_recipe">Assigned Recipe</string>
     <string name="salsa">Salsa</string>
     <string name="assignment_due">Assignment Due</string>
+
     <string name="due_date">Thursday-February26</string>
+    <string name="bonus_points">For Bonus Points,Cook your dish here:</string>
+    <string name="submit_button">Submit to Teacher</string>
+    <string name="good_job">Good job!!!</string>
+
+
+
 </resources>
