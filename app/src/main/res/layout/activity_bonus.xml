@@ -13,6 +13,48 @@
         android:textSize="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:id="@+id/a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_tomato"/>
+        <ImageView
+            android:id="@+id/b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_tomato"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/c"
+            android:layout_toEndOf="@+id/c" />
+        <ImageView
+            android:id="@+id/c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_tomato"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:id="@+id/d"
+            android:layout_below="@+id/c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_tomato"/>
+        <ImageView
+            android:id="@+id/e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_tomato"
+            android:layout_below="@+id/c"
+            android:layout_toRightOf="@+id/c"
+            android:layout_toEndOf="@+id/c" />
+
+
+
+    </RelativeLayout>
     <TextView
         android:id="@+id/good_job"
         android:text="@string/good_job"
@@ -24,6 +66,13 @@
         android:textSize="20sp"
         android:textColor="#008000"
         />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/good_job"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bowl"/>
+
     <Button
         android:id="@+id/submit_button"
         android:layout_width="wrap_content" android:layout_height="wrap_content"
