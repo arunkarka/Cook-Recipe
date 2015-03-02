@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="10dp"
-        android:background="@drawable/border"
+        android:background="@drawable/border_red"
         android:gravity="center_horizontal">
         <TextView
             android:id="@+id/assigned_recipe"
