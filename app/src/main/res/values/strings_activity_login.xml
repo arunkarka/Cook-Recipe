@@ -12,6 +12,7 @@
     <string name="error_field_required">This field is required</string>
     <string name="end_button">End</string>
     <string name="bonus_button">Get bonus points</string>
+    <string name="spanish_word">Match the correct spanish and english word together to gather all the ingredients</string>
 
     <string name="assigned_recipe">Assigned Recipe</string>
     <string name="salsa">Salsa</string>
@@ -21,6 +22,22 @@
     <string name="bonus_points">For Bonus Points,Cook your dish here:</string>
     <string name="submit_button">Submit to Teacher</string>
     <string name="good_job">Good job!!!</string>
+
+    <string name="ingredients">Ingredients:</string>
+    <string name="tomotos">Tomotos</string>
+    <string name="diced_onion">Diced Onions</string>
+    <string name="garlic">Garlic</string>
+    <string name="salt">Salt</string>
+    <string name="lime">Lime</string>
+    <string name="green_chilis">Green Chilis</string>
+    <string name="tomatos">Tomatos</string>
+    <string name="coriander">Coriander</string>
+    <string name="lima">Lima</string>
+    <string name="unknown1">1</string>
+    <string name="unknown2">2</string>
+    <string name="unknown3">3</string>
+    <string name="unknown4">4</string>
+    <string name="unknown5">5</string>
 
 
 
