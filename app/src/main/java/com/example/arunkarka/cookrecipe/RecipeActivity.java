@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 
 public class RecipeActivity extends ActionBarActivity {
@@ -14,6 +15,13 @@ public class RecipeActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe);
+        findViewById(R.id.tomotos).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                findViewById(R.id.tomotos_image).setVisibility(View.VISIBLE);
+            }
+        });
+
 
         findViewById(R.id.bonus_button).setOnClickListener(new View.OnClickListener() {
             @Override
