@@ -77,7 +77,7 @@
     <Button
         android:id="@+id/submit_button"
         android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:text="@string/submit_button"
+        android:text="@string/submit_teacher_button"
         android:textStyle="bold"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
