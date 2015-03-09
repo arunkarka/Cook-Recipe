@@ -20,14 +20,14 @@
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textSize="15sp"
-            android:textColor="#0099CC">
+            android:textColor="@color/blue">
             </TextView>
         <Button android:id="@+id/tomotos"
             android:layout_below="@id/spanish_word"
             android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_height"
              android:text="@string/tomotos"
             android:textSize="10sp"
-            android:textColor="#E30B5D"
+            android:textColor="@color/pink"
             />
         <Button android:id="@+id/diced_onion"
             android:layout_below="@id/spanish_word"
@@ -35,62 +35,62 @@
             android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_height"
              android:text="@string/diced_onion"
             android:textSize="10sp"
-            android:textColor="#E30B5D"/>
+            android:textColor="@color/pink"/>
         <Button android:id="@+id/tomatos"
             android:layout_below="@id/spanish_word"
             android:layout_toRightOf="@+id/diced_onion"
             android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_height"
             android:text="@string/tomatos"
             android:textSize="10sp"
-            android:textColor="#E30B5D"/>
+            android:textColor="@color/pink"/>
         <Button android:id="@+id/coriander"
             android:layout_below="@id/spanish_word"
             android:layout_toRightOf="@+id/tomatos"
             android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_height"
             android:text="@string/coriander"
             android:textSize="10sp"
-            android:textColor="#E30B5D"/>
+            android:textColor="@color/pink"/>
 
         <Button android:id="@+id/garlic"
             android:layout_below="@+id/tomotos"
             android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_height"
             android:text="@string/garlic"
             android:textSize="10sp"
-            android:textColor="#E30B5D"/>
+            android:textColor="@color/pink"/>
         <Button android:id="@+id/salt"
             android:layout_below="@+id/diced_onion"
             android:layout_toRightOf="@+id/garlic"
             android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_height"
              android:text="@string/salt"
             android:textSize="10sp"
-            android:textColor="#E30B5D"/>
+            android:textColor="@color/pink"/>
         <Button android:id="@+id/lima"
             android:layout_below="@+id/tomatos"
             android:layout_toRightOf="@+id/salt"
             android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_height"
             android:text="@string/lima"
             android:textSize="10sp"
-            android:textColor="#E30B5D"/>
+            android:textColor="@color/pink"/>
         <Button android:id="@+id/unknown1"
             android:layout_below="@+id/coriander"
             android:layout_toRightOf="@+id/lima"
             android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_height"
             android:text="@string/unknown1"
             android:textSize="10sp"
-            android:textColor="#E30B5D"/>
+            android:textColor="@color/pink"/>
         <Button android:id="@+id/lime"
             android:layout_below="@+id/garlic"
             android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_height"
              android:text="@string/lime"
             android:textSize="10sp"
-            android:textColor="#E30B5D"/>
+            android:textColor="@color/pink"/>
         <Button android:id="@+id/green_chilis"
             android:layout_toRightOf="@+id/lime"
             android:layout_below="@+id/salt"
             android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_height"
              android:text="@string/green_chilis"
             android:textSize="10sp"
-            android:textColor="#E30B5D"
+            android:textColor="@color/pink"
             />
         <Button android:id="@+id/unknown2"
             android:layout_below="@+id/lima"
@@ -98,27 +98,27 @@
             android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_height"
             android:text="@string/unknown2"
             android:textSize="10sp"
-            android:textColor="#E30B5D"/>
+            android:textColor="@color/pink"/>
         <Button android:id="@+id/unknown3"
             android:layout_below="@+id/unknown1"
             android:layout_toRightOf="@+id/unknown2"
             android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_height"
             android:text="@string/unknown3"
             android:textSize="10sp"
-            android:textColor="#E30B5D"/>
+            android:textColor="@color/pink"/>
         <Button android:id="@+id/unknown4"
             android:layout_below="@+id/lime"
             android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_height"
             android:text="@string/unknown4"
             android:textSize="10sp"
-            android:textColor="#E30B5D"/>
+            android:textColor="@color/pink"/>
         <Button android:id="@+id/unknown5"
             android:layout_below="@+id/green_chilis"
             android:layout_toRightOf="@+id/unknown4"
             android:layout_width="@dimen/button_width" android:layout_height="@dimen/button_height"
             android:text="@string/unknown5"
             android:textSize="10sp"
-            android:textColor="#E30B5D"/>
+            android:textColor="@color/pink"/>
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -172,7 +172,7 @@
         <TextView
             android:id="@+id/match"
             android:text="@string/match"
-            android:textColor="#E30B5D"
+            android:textColor="@color/pink"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             />

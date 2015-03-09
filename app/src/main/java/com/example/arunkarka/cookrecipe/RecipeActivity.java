@@ -23,6 +23,36 @@ public class RecipeActivity extends Activity {
             }
         });
 
+        findViewById(R.id.salt).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                findViewById(R.id.salt_image).setVisibility(View.VISIBLE);
+            }
+        });
+
+        findViewById(R.id.lime).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                findViewById(R.id.lime_image).setVisibility(View.VISIBLE);
+            }
+        });
+
+        findViewById(R.id.diced_onion).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                findViewById(R.id.diced_onion_image).setVisibility(View.VISIBLE);
+            }
+        });
+
+        findViewById(R.id.green_chilis).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                findViewById(R.id.green_chilis_image).setVisibility(View.VISIBLE);
+            }
+        });
+
+
+
 
         findViewById(R.id.bonus_button).setOnClickListener(new View.OnClickListener() {
             @Override
