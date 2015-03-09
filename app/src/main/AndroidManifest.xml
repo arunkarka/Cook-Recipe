@@ -24,19 +24,18 @@
         </activity>
         <activity
             android:name=".FirstActivity"
-            android:label="@string/title_activity_first" >
+            android:label="@string/title_activity_first"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".RecipeActivity"
-            android:label="@string/title_activity_recipe" >
+            android:label="@string/title_activity_recipe"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".BonusActivity"
-            android:label="@string/title_activity_bonus" >
-        </activity>
-        <activity
-            android:name=".TestActivity"
-            android:label="@string/title_activity_test" >
+            android:label="@string/title_activity_bonus"
+            android:screenOrientation="portrait">
         </activity>
     </application>
 
