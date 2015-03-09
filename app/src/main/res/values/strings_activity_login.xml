@@ -1,8 +1,8 @@
 <resources>
 
     <!-- Strings related to login -->
-    <string name="prompt_password">Password  (in spanish)</string>
-    <string name="prompt_email">Login User (in spanish)</string>
+    <string name="prompt_password">Password  (contrasena)</string>
+    <string name="prompt_email">Login User (iniciar sesion )</string>
     <string name="action_sign_in_short">Login</string>
     <string name="cancel_button">Cancel</string>
 
@@ -24,21 +24,21 @@
     <string name="good_job">Good job!!!</string>
 
     <string name="ingredients">Ingredients:</string>
-    <string name="tomotos">Tomotos</string>
-    <string name="diced_onion">Diced Onions</string>
+    <string name="tomotos">Tomato</string>
+    <string name="diced_onion">Onions</string>
     <string name="garlic">Garlic</string>
     <string name="salt">Salt</string>
     <string name="lime">Lime</string>
     <string name="green_chilis">Green Chilis</string>
-    <string name="tomatos">Tomatos</string>
+    <string name="tomatos">Tomate</string>
     <string name="coriander">Coriander</string>
     <string name="lima">Lima</string>
-    <string name="unknown1">1</string>
-    <string name="unknown2">2</string>
-    <string name="unknown3">3</string>
-    <string name="unknown4">4</string>
-    <string name="unknown5">5</string>
-    <string name="cilantro">Cilantro</string>
+    <string name="unknown1">Chilli verde</string>
+    <string name="unknown2">cebollas</string>
+    <string name="unknown3">Cilantro</string>
+    <string name="unknown4">Sal</string>
+    <string name="unknown5">Ajo</string>
+
 
     <string name="match">Your ingredients will appear here as you match the words correctly</string>
 
