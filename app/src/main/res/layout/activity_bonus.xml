@@ -9,15 +9,12 @@
         android:layout_width="wrap_content"
         android:layout_height="@dimen/button_height"
         android:text="@string/title_activity_bonus"
-        android:gravity="center_horizontal"
         />
-
     <TextView
         android:id="@+id/bonus_points_click"
         android:text="@string/bonus_points"
         android:textColor="#E30B5D"
-        android:textSize="20dp"
-        android:layout_marginTop="8dp"
+        android:textSize="20sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/title_bonus"/>
@@ -25,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/bonus_points_click"
-        android:layout_marginTop="20dp">
+        >
         <ImageView
             android:id="@+id/tomago_drag"
             android:layout_width="wrap_content"
