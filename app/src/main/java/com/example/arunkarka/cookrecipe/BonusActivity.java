@@ -22,15 +22,22 @@ import android.widget.TextView;
 
 
 public class BonusActivity extends Activity{
-    private static final String IMAGEVIEW_TAG = "icon bitmap";
-
+    private static final String TOMATO_TAG = "tomato";
+    private static final boolean IS_TOMATO_ADDED = false;
+    private static final boolean IS_GREEN_CHILLI_ADDED = false;
+    private static final boolean IS_LIME_ADDED = false;
+    private static final boolean IS_ONION_ADDED = false;
+    private static final boolean ARE_ALL_INGREDIENTS_ADDED = false;
+    private static final int INGREDIENT_COUNT = 0;
+    private static enum DragItemType {TOMATO, GREEN_CHILLI, LIME, ONION};
+    private DragItemType dragItemType;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bonus);
         final ImageView imageView = (ImageView)findViewById(R.id.tomago_drag);
-        imageView.setTag(IMAGEVIEW_TAG);
+        imageView.setTag(TOMATO_TAG);
 
         imageView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
@@ -109,6 +116,7 @@ public class BonusActivity extends Activity{
                     view.setVisibility(View.VISIBLE); */
                     break;
                 case DragEvent.ACTION_DRAG_ENDED:
+                    
                     //v.setBackgroundDrawable(normalShape);
                 default:
                     break;

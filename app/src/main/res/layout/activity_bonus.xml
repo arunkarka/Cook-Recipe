@@ -29,34 +29,35 @@
             android:layout_height="wrap_content"
             android:src="@drawable/ic_tomato"/>
         <ImageView
-            android:id="@+id/b"
+            android:id="@+id/onion_drag"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_tomato"
+            android:src="@drawable/ic_onion"
             android:layout_alignParentTop="true"
-            android:layout_toRightOf="@+id/c"
-            android:layout_toEndOf="@+id/c" />
+            android:layout_toRightOf="@+id/green_chilli_drag"
+            android:layout_toEndOf="@+id/green_chilli_drag" />
         <ImageView
-            android:id="@+id/c"
+            android:id="@+id/green_chilli_drag"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_tomato"
+            android:src="@drawable/ic_green_chilli"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true" />
         <ImageView
-            android:id="@+id/d"
-            android:layout_below="@+id/c"
+            android:id="@+id/lime_drag"
+            android:layout_below="@+id/green_chilli_drag"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_tomato"/>
+            android:src="@drawable/ic_lime"/>
         <ImageView
             android:id="@+id/e"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:visibility="invisible"
             android:src="@drawable/ic_tomato"
-            android:layout_below="@+id/c"
-            android:layout_toRightOf="@+id/c"
-            android:layout_toEndOf="@+id/c" />
+            android:layout_below="@+id/green_chilli_drag"
+            android:layout_toRightOf="@+id/green_chilli_drag"
+            android:layout_toEndOf="@+id/green_chilli_drag" />
 
 
 
@@ -79,7 +80,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@id/good_job"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/bowl"/>
+        android:src="@drawable/ic_bowl_empty"/>
 
     <Button
         android:id="@+id/submit_teacher_button"
