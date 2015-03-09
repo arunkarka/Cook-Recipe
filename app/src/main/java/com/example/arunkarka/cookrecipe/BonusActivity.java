@@ -18,6 +18,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 
 public class BonusActivity extends Activity{
@@ -47,6 +48,13 @@ public class BonusActivity extends Activity{
         ImageView bowl = (ImageView)findViewById(R.id.bowl_image);
         bowl.setOnDragListener(new MyDragListener());
 
+        final TextView goodJob = (TextView) findViewById(R.id.good_job);
+        findViewById(R.id.submit_teacher_button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goodJob.setVisibility(View.VISIBLE);
+            }
+        });
     }
 
     private static class MyDragShadowBuilder extends View.DragShadowBuilder {

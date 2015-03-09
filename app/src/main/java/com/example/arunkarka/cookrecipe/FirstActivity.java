@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -23,13 +24,14 @@ public class FirstActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first);
 
-
         findViewById(R.id.begin_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startRecipeActivity();
             }
         });
+
+
 
     }
 
