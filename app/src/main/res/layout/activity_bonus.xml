@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp">
         <ImageView
-            android:id="@+id/a"
+            android:id="@+id/tomago_drag"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_tomato"/>
@@ -67,6 +67,7 @@
         android:textColor="#008000"
         />
     <ImageView
+        android:id="@+id/bowl_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@id/good_job"
