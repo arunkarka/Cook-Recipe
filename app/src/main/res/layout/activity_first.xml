@@ -95,14 +95,15 @@
             android:id="@+id/h"
             android:layout_width="@dimen/text_width"
             android:layout_height="@dimen/text_height"
-            android:text="@string/cilantro"
+            android:text="@string/unknown3"
             android:textColor="#000000"/>
 
     </LinearLayout>
     <Button android:id="@+id/begin_button"
         android:layout_width="100dp" android:layout_height="wrap_content"
         android:text="@string/begin_button"
+        android:gravity="center_horizontal"
         android:layout_alignParentBottom="true"
-        android:gravity="center_horizontal"/>
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
