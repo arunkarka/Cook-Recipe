@@ -116,7 +116,7 @@ public class BonusActivity extends Activity{
                     view.setVisibility(View.VISIBLE); */
                     break;
                 case DragEvent.ACTION_DRAG_ENDED:
-                    
+
                     //v.setBackgroundDrawable(normalShape);
                 default:
                     break;
