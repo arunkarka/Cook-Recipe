@@ -132,7 +132,7 @@
             android:visibility="invisible"
             android:src="@drawable/ic_tomato"/>
         <ImageView
-            android:id="@+id/b"
+            android:id="@+id/diced_onion_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_tomato"
@@ -140,20 +140,20 @@
             android:layout_toRightOf="@+id/c"
             android:layout_toEndOf="@+id/c" />
         <ImageView
-            android:id="@+id/c"
+            android:id="@+id/green_chilis_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_tomato"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true" />
         <ImageView
-            android:id="@+id/d"
+            android:id="@+id/lime_image"
             android:layout_below="@+id/c"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_tomato"/>
         <ImageView
-            android:id="@+id/e"
+            android:id="@+id/salt_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_tomato"
