@@ -19,7 +19,7 @@ public class RecipeActivity extends Activity {
         findViewById(R.id.tomotos).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                findViewById(R.id.tomotos_image).setVisibility(View.VISIBLE);
+                findViewById(R.id.tomago_recipe).setVisibility(View.VISIBLE);
             }
         });
 
