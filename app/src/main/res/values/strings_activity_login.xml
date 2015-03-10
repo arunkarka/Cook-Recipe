@@ -14,9 +14,9 @@
     <string name="bonus_button">Get bonus points</string>
     <string name="spanish_word">Match the correct spanish and english word together to gather all the ingredients</string>
 
-    <string name="assigned_recipe">Assigned Recipe</string>
+    <string name="assigned_recipe">Assigned Recipe:</string>
     <string name="salsa">Salsa</string>
-    <string name="assignment_due">Assignment Due</string>
+    <string name="assignment_due">Assignment Due:</string>
 
     <string name="due_date">Thursday-February26</string>
     <string name="bonus_points">For Bonus Points,Cook your dish here:</string>
