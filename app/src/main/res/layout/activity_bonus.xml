@@ -13,7 +13,7 @@
     <TextView
         android:id="@+id/bonus_points_click"
         android:text="@string/bonus_points"
-        android:textColor="#E30B5D"
+        android:textColor="@color/pink"
         android:textSize="20sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

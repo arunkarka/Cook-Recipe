@@ -60,43 +60,43 @@
             android:layout_width="@dimen/text_width"
             android:layout_height="@dimen/text_height"
             android:text="@string/tomotos"
-            android:textColor="#000000"/>
+            android:textColor="@color/black"/>
         <TextView
             android:id="@+id/c"
             android:layout_width="@dimen/text_width"
             android:layout_height="@dimen/text_height"
             android:text="@string/diced_onion"
-            android:textColor="#000000"/>
+            android:textColor="@color/black"/>
         <TextView
             android:id="@+id/d"
             android:layout_width="@dimen/text_width"
             android:layout_height="@dimen/text_height"
             android:text="@string/salt"
-            android:textColor="#000000"/>
+            android:textColor="@color/black"/>
         <TextView
             android:id="@+id/e"
             android:layout_width="@dimen/text_width"
             android:layout_height="@dimen/text_height"
             android:text="@string/lime"
-            android:textColor="#000000"/>
+            android:textColor="@color/black"/>
         <TextView
             android:id="@+id/f"
             android:layout_width="@dimen/text_width"
             android:layout_height="@dimen/text_height"
             android:text="@string/garlic"
-            android:textColor="#000000"/>
+            android:textColor="@color/black"/>
         <TextView
             android:id="@+id/g"
             android:layout_width="@dimen/text_width"
             android:layout_height="@dimen/text_height"
             android:text="@string/green_chilis"
-            android:textColor="#000000"/>
+            android:textColor="@color/black"/>
         <TextView
             android:id="@+id/h"
             android:layout_width="@dimen/text_width"
             android:layout_height="@dimen/text_height"
             android:text="@string/unknown3"
-            android:textColor="#000000"/>
+            android:textColor="@color/black"/>
 
     </LinearLayout>
     <Button android:id="@+id/begin_button"
