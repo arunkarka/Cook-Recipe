@@ -2,7 +2,7 @@
 
     <!-- Strings related to login -->
     <string name="prompt_password">Password  (contrasena)</string>
-    <string name="prompt_email">Login User (Iniciar sesion )</string>
+    <string name="prompt_email">Login User (iniciar sesion )</string>
     <string name="action_sign_in_short">Login</string>
     <string name="cancel_button">Cancel</string>
 

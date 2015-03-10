@@ -13,7 +13,7 @@
     <TextView
         android:id="@+id/bonus_points_click"
         android:text="@string/bonus_points"
-        android:textColor="@color/pink"
+        android:textColor="#E30B5D"
         android:textSize="20sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,6 +23,42 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/bonus_points_click"
         >
+        <ImageView
+            android:id="@+id/tomago_drag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_tomato"/>
+        <ImageView
+            android:id="@+id/onion_drag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_onion"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/green_chilli_drag"
+            android:layout_toEndOf="@+id/green_chilli_drag" />
+        <ImageView
+            android:id="@+id/green_chilli_drag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_green_chilli"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:id="@+id/lime_drag"
+            android:layout_below="@+id/green_chilli_drag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_lime"/>
+        <ImageView
+            android:id="@+id/e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:src="@drawable/ic_tomato"
+            android:layout_below="@+id/green_chilli_drag"
+            android:layout_toRightOf="@+id/green_chilli_drag"
+            android:layout_toEndOf="@+id/green_chilli_drag" />
+
 
 
     </RelativeLayout>
@@ -54,51 +90,5 @@
         android:textStyle="bold"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
-
-    <ImageView
-        android:id="@+id/tomago_drag"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_tomato"
-        android:layout_above="@+id/good_job"
-        android:layout_alignLeft="@+id/good_job"
-        android:layout_alignStart="@+id/good_job" />
-
-    <ImageView
-        android:id="@+id/green_chilli_drag"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_green_chilli"
-        android:layout_above="@+id/tomago_drag"
-        android:layout_alignLeft="@+id/tomago_drag"
-        android:layout_alignStart="@+id/tomago_drag" />
-
-    <ImageView
-        android:id="@+id/e"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="invisible"
-        android:src="@drawable/ic_tomato"
-        android:layout_above="@+id/tomago_drag"
-        android:layout_alignRight="@+id/good_job"
-        android:layout_alignEnd="@+id/good_job" />
-
-    <ImageView
-        android:id="@+id/lime_drag"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_lime"
-        android:layout_above="@+id/tomago_drag"
-        android:layout_alignLeft="@+id/tomago_drag"
-        android:layout_alignStart="@+id/tomago_drag" />
-
-    <ImageView
-        android:id="@+id/onion_drag"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_onion"
-        android:layout_above="@+id/tomago_drag"
-        android:layout_alignLeft="@+id/tomago_drag"
-        android:layout_alignStart="@+id/tomago_drag" />
 
 </RelativeLayout>
