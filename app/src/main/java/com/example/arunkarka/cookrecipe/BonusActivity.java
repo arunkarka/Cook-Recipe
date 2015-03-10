@@ -19,15 +19,20 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.HashMap;
 
 
 public class BonusActivity extends Activity{
     private static final String TOMATO_TAG = "tomato";
-    private static final boolean IS_TOMATO_ADDED = false;
-    private static final boolean IS_GREEN_CHILLI_ADDED = false;
-    private static final boolean IS_LIME_ADDED = false;
-    private static final boolean IS_ONION_ADDED = false;
-    private static final boolean ARE_ALL_INGREDIENTS_ADDED = false;
+    private static final String GREEN_CHILLI_TAG = "green_chilli";
+    private static final String ONION_TAG = "onion";
+    private static final String LIME_TAG = "lime";
+    private HashMap<String, Boolean> ADDED_INGREDIENTS = new HashMap<String, Boolean>();
+    private static final int ALL_INGREDIENTS_COUNT =4;
+    private static boolean ARE_ALL_INGREDIENTS_ADDED = false;
     private static final int INGREDIENT_COUNT = 0;
     private static enum DragItemType {TOMATO, GREEN_CHILLI, LIME, ONION};
     private DragItemType dragItemType;
@@ -36,21 +41,22 @@ public class BonusActivity extends Activity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bonus);
-        final ImageView imageView = (ImageView)findViewById(R.id.tomago_drag);
-        imageView.setTag(TOMATO_TAG);
 
-        imageView.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View v) {
-                v.getTag();
-                ClipData.Item item = new ClipData.Item((CharSequence)v.getTag());
-                ClipData dragData = new ClipData((CharSequence)v.getTag(), new String[]{ClipDescription.MIMETYPE_TEXT_PLAIN},item);
-                View.DragShadowBuilder myShadow = new MyDragShadowBuilder(imageView);
-                imageView.startDrag(dragData, myShadow, v, 0);
-                imageView.setVisibility(View.INVISIBLE);
-                return true;
-            }
-        });
+        final ImageView tomato = (ImageView)findViewById(R.id.tomago_drag);
+        tomato.setTag(TOMATO_TAG);
+        tomato.setOnLongClickListener(new MyDragSetterListener());
+
+        final ImageView green_chilli = (ImageView)findViewById(R.id.green_chilli_drag);
+        green_chilli.setTag(GREEN_CHILLI_TAG);
+        green_chilli.setOnLongClickListener(new MyDragSetterListener());
+
+        final ImageView onion = (ImageView)findViewById(R.id.onion_drag);
+        onion.setTag(ONION_TAG);
+        onion.setOnLongClickListener(new MyDragSetterListener());
+
+        final ImageView lime = (ImageView)findViewById(R.id.lime_drag);
+        lime.setTag(LIME_TAG);
+        lime.setOnLongClickListener(new MyDragSetterListener());
 
         ImageView bowl = (ImageView)findViewById(R.id.bowl_image);
         bowl.setOnDragListener(new MyDragListener());
@@ -62,6 +68,19 @@ public class BonusActivity extends Activity{
                 goodJob.setVisibility(View.VISIBLE);
             }
         });
+    }
+    private static class MyDragSetterListener implements View.OnLongClickListener {
+        @Override
+        public boolean onLongClick(View v) {
+            v.getTag();
+            ClipData.Item item = new ClipData.Item((CharSequence) v.getTag());
+            ClipData dragData = new ClipData((CharSequence) v.getTag(), new String[]{ClipDescription.MIMETYPE_TEXT_PLAIN}, item);
+            View.DragShadowBuilder myShadow = new MyDragShadowBuilder(v);
+            v.startDrag(dragData, myShadow, v, 0);
+            v.setVisibility(View.INVISIBLE);
+            return true;
+        }
+
     }
 
     private static class MyDragShadowBuilder extends View.DragShadowBuilder {
@@ -107,6 +126,23 @@ public class BonusActivity extends Activity{
                     //v.setBackgroundDrawable(normalShape);
                     break;
                 case DragEvent.ACTION_DROP:
+
+                    ClipData.Item item = event.getClipData().getItemAt(0);
+                    String dragDataStr = (String)item.getText();
+
+                    // Invalidates the view to force a redraw
+                    //v.invalidate();
+
+                    // Returns true. DragEvent.getResult() will return true.
+
+                    ImageView bowl = (ImageView)v;
+                    if (ADDED_INGREDIENTS.get(dragDataStr)==null) {
+                        ADDED_INGREDIENTS.put(dragDataStr, true);
+                    }
+                    if (ADDED_INGREDIENTS.size() == ALL_INGREDIENTS_COUNT) {
+                        ARE_ALL_INGREDIENTS_ADDED = true;
+                        bowl.setImageResource(R.drawable.ic_bowl_full);
+                    }
                     // Dropped, reassign View to ViewGroup
                     /*View view = (View) event.getLocalState();
                     ViewGroup owner = (ViewGroup) view.getParent();
@@ -114,7 +150,7 @@ public class BonusActivity extends Activity{
                     LinearLayout container = (LinearLayout) v;
                     container.addView(view);
                     view.setVisibility(View.VISIBLE); */
-                    break;
+                    return true;
                 case DragEvent.ACTION_DRAG_ENDED:
 
                     //v.setBackgroundDrawable(normalShape);
