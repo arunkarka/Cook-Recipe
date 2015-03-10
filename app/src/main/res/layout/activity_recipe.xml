@@ -123,12 +123,18 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:layout_below="@id/ingredients_container"
         android:background="@drawable/border_red"
         android:padding="8dp"
-
         >
+        <TextView
+            android:id="@+id/match"
+            android:text="@string/match"
+            android:textColor="#E30B5D"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
         <ImageView
             android:id="@+id/tomago_recipe"
             android:layout_width="wrap_content"
@@ -165,26 +171,12 @@
                     android:layout_toRightOf="@+id/green_chilli_recipe"
                     android:layout_toEndOf="@+id/green_chilli_recipe" />
      </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/ingredients_container"
-        >
-        <TextView
-            android:id="@+id/match"
-            android:text="@string/match"
-            android:textColor="#E30B5D"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
-        </RelativeLayout>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:orientation="horizontal"
         >
-
         <Button android:id="@+id/end_button"
             android:layout_width="wrap_content" android:layout_height="wrap_content"
             android:text="@string/submit_button"
