@@ -120,51 +120,56 @@
             android:textSize="10sp"
             android:textColor="@color/pink"/>
     </RelativeLayout>
+    <TextView
+        android:id="@+id/match"
+        android:text="@string/match"
+        android:textColor="#E30B5D"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_below="@id/ingredients_container"
+        />
     <RelativeLayout
+        android:id="@+id/ingredients_image_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:layout_below="@id/ingredients_container"
+        android:layout_below="@id/match"
         android:background="@drawable/border_red"
-        android:padding="8dp"
+        android:padding="3dp"
         >
-        <TextView
-            android:id="@+id/match"
-            android:text="@string/match"
-            android:textColor="#E30B5D"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
+
         <ImageView
             android:id="@+id/tomago_recipe"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/image_recipe"
+            android:layout_height="@dimen/image_recipe"
             android:src="@drawable/ic_tomato"/>
                 <ImageView
                     android:id="@+id/onion_recipe"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/image_recipe"
+                    android:layout_height="@dimen/image_recipe"
                     android:src="@drawable/ic_onion"
                     android:layout_alignParentTop="true"
                     android:layout_toRightOf="@+id/green_chilli_recipe"
                     android:layout_toEndOf="@+id/green_chilli_recipe" />
                 <ImageView
                     android:id="@+id/green_chilli_recipe"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/image_recipe"
+                    android:layout_height="@dimen/image_recipe"
                     android:src="@drawable/ic_green_chilli"
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true" />
                 <ImageView
                     android:id="@+id/lime_recipe"
                     android:layout_below="@+id/green_chilli_recipe"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/image_recipe"
+                    android:layout_height="@dimen/image_recipe"
                     android:src="@drawable/ic_lime"/>
                 <ImageView
                     android:id="@+id/e"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/image_recipe"
+                    android:layout_height="@dimen/image_recipe"
                     android:visibility="invisible"
                     android:src="@drawable/ic_tomato"
                     android:layout_below="@+id/green_chilli_recipe"
