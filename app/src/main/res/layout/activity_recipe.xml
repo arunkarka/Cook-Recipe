@@ -154,7 +154,9 @@
             android:id="@+id/tomago_recipe"
             android:layout_width="@dimen/image_recipe"
             android:layout_height="@dimen/image_recipe"
-            android:src="@drawable/ic_tomato"/>
+            android:src="@drawable/ic_tomato"
+            android:visibility="invisible"
+        />
                 <ImageView
                     android:id="@+id/onion_recipe"
                     android:layout_width="@dimen/image_recipe"
@@ -162,26 +164,29 @@
                     android:src="@drawable/ic_onion"
                     android:layout_alignParentTop="true"
                     android:layout_toRightOf="@id/green_chilli_recipe"
-                    android:layout_toEndOf="@id/green_chilli_recipe" />
+                    android:layout_toEndOf="@id/green_chilli_recipe"
+                    android:visibility="invisible"/>
                 <ImageView
                     android:id="@+id/green_chilli_recipe"
                     android:layout_width="@dimen/image_recipe"
                     android:layout_height="@dimen/image_recipe"
                     android:src="@drawable/ic_green_chilli"
                     android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true" />
+                    android:layout_centerHorizontal="true"
+                    android:visibility="invisible"/>
                 <ImageView
                     android:id="@+id/lime_recipe"
                     android:layout_below="@+id/green_chilli_recipe"
                     android:layout_width="@dimen/image_recipe"
                     android:layout_height="@dimen/image_recipe"
-                    android:src="@drawable/ic_lime"/>
+                    android:src="@drawable/ic_lime"
+                    android:visibility="invisible"/>
                 <ImageView
-                    android:id="@+id/e"
+                    android:id="@+id/salt_recipe"
                     android:layout_width="@dimen/image_recipe"
                     android:layout_height="@dimen/image_recipe"
                     android:visibility="invisible"
-                    android:src="@drawable/ic_tomato"
+                    android:src="@drawable/ic_bowl_empty"
                     android:layout_below="@id/green_chilli_recipe"
                     android:layout_toRightOf="@id/green_chilli_recipe"
                     android:layout_toEndOf="@id/green_chilli_recipe" />
