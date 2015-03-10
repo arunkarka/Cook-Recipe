@@ -172,15 +172,9 @@
                     android:layout_centerHorizontal="true" />
                 <ImageView
                     android:id="@+id/lime_recipe"
-<<<<<<< Updated upstream
                     android:layout_below="@+id/green_chilli_recipe"
                     android:layout_width="@dimen/image_recipe"
                     android:layout_height="@dimen/image_recipe"
-=======
-                    android:layout_below="@id/green_chilli_recipe"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
->>>>>>> Stashed changes
                     android:src="@drawable/ic_lime"/>
                 <ImageView
                     android:id="@+id/e"
