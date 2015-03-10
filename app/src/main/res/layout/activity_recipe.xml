@@ -151,7 +151,7 @@
         >
 
         <ImageView
-            android:id="@+id/tomago_recipe"
+            android:id="@+id/tomato_recipe"
             android:layout_width="@dimen/image_recipe"
             android:layout_height="@dimen/image_recipe"
             android:src="@drawable/ic_tomato"
@@ -163,8 +163,6 @@
                     android:layout_height="@dimen/image_recipe"
                     android:src="@drawable/ic_onion"
                     android:layout_alignParentTop="true"
-                    android:layout_toRightOf="@id/green_chilli_recipe"
-                    android:layout_toEndOf="@id/green_chilli_recipe"
                     android:visibility="invisible"/>
                 <ImageView
                     android:id="@+id/green_chilli_recipe"
@@ -176,7 +174,7 @@
                     android:visibility="invisible"/>
                 <ImageView
                     android:id="@+id/lime_recipe"
-                    android:layout_below="@+id/green_chilli_recipe"
+                    android:layout_below="@id/green_chilli_recipe"
                     android:layout_width="@dimen/image_recipe"
                     android:layout_height="@dimen/image_recipe"
                     android:src="@drawable/ic_lime"
