@@ -123,47 +123,48 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:layout_below="@id/ingredients_container"
-        android:layout_marginTop="10dp">
+        android:background="@drawable/border_red"
+        android:padding="8dp"
+
+        >
         <ImageView
-            android:id="@+id/tomotos_image"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:visibility="invisible"
-            android:src="@drawable/ic_tomato"/>
-        <ImageView
-            android:id="@+id/diced_onion_image"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_tomato"
-            android:layout_alignParentTop="true"
-            android:layout_toRightOf="@+id/c"
-            android:layout_toEndOf="@+id/c" />
-        <ImageView
-            android:id="@+id/green_chilis_image"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_tomato"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true" />
-        <ImageView
-            android:id="@+id/lime_image"
-            android:layout_below="@+id/c"
+            android:id="@+id/tomago_recipe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_tomato"/>
-        <ImageView
-            android:id="@+id/salt_image"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_tomato"
-            android:layout_below="@+id/c"
-            android:layout_toRightOf="@+id/c"
-            android:layout_toEndOf="@+id/c" />
-
-
-
-    </RelativeLayout>
+                <ImageView
+                    android:id="@+id/onion_recipe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_onion"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/green_chilli_recipe"
+                    android:layout_toEndOf="@+id/green_chilli_recipe" />
+                <ImageView
+                    android:id="@+id/green_chilli_recipe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_green_chilli"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+                <ImageView
+                    android:id="@+id/lime_recipe"
+                    android:layout_below="@+id/green_chilli_recipe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_lime"/>
+                <ImageView
+                    android:id="@+id/e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:src="@drawable/ic_tomato"
+                    android:layout_below="@+id/green_chilli_recipe"
+                    android:layout_toRightOf="@+id/green_chilli_recipe"
+                    android:layout_toEndOf="@+id/green_chilli_recipe" />
+     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
