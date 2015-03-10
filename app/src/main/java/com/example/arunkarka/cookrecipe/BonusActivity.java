@@ -32,10 +32,7 @@ public class BonusActivity extends Activity{
     private static final String LIME_TAG = "lime";
     private HashMap<String, Boolean> ADDED_INGREDIENTS = new HashMap<String, Boolean>();
     private static final int ALL_INGREDIENTS_COUNT =4;
-    private static boolean ARE_ALL_INGREDIENTS_ADDED = false;
-    private static final int INGREDIENT_COUNT = 0;
-    private static enum DragItemType {TOMATO, GREEN_CHILLI, LIME, ONION};
-    private DragItemType dragItemType;
+    private boolean ARE_ALL_INGREDIENTS_ADDED = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,7 +62,13 @@ public class BonusActivity extends Activity{
         findViewById(R.id.submit_teacher_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                goodJob.setVisibility(View.VISIBLE);
+                if(ARE_ALL_INGREDIENTS_ADDED) {
+                    goodJob.setVisibility(View.VISIBLE);
+                } else {
+                    goodJob.setText(getResources().getString(R.string.not_finished));
+                    goodJob.setVisibility(View.VISIBLE);
+                }
+
             }
         });
     }
@@ -77,7 +80,6 @@ public class BonusActivity extends Activity{
             ClipData dragData = new ClipData((CharSequence) v.getTag(), new String[]{ClipDescription.MIMETYPE_TEXT_PLAIN}, item);
             View.DragShadowBuilder myShadow = new MyDragShadowBuilder(v);
             v.startDrag(dragData, myShadow, v, 0);
-            v.setVisibility(View.INVISIBLE);
             return true;
         }
 
@@ -118,6 +120,7 @@ public class BonusActivity extends Activity{
             switch (event.getAction()) {
                 case DragEvent.ACTION_DRAG_STARTED:
                     // do nothing
+                    //findViewById(R.id.lime_drag).setVisibility(View.VISIBLE);
                     break;
                 case DragEvent.ACTION_DRAG_ENTERED:
                     //v.setBackgroundDrawable(enterShape);
@@ -129,6 +132,16 @@ public class BonusActivity extends Activity{
 
                     ClipData.Item item = event.getClipData().getItemAt(0);
                     String dragDataStr = (String)item.getText();
+                    if (dragDataStr.equals(TOMATO_TAG)) {
+                        findViewById(R.id.tomago_drag).setVisibility(View.INVISIBLE);
+                    } else if (dragDataStr.equals(ONION_TAG)) {
+                        findViewById(R.id.onion_drag).setVisibility(View.INVISIBLE);
+                    } else if (dragDataStr.equals(LIME_TAG)) {
+                        findViewById(R.id.lime_drag).setVisibility(View.INVISIBLE);
+                    } else if (dragDataStr.equals(GREEN_CHILLI_TAG)) {
+                        findViewById(R.id.green_chilli_drag).setVisibility(View.INVISIBLE);
+                    }
+
 
                     // Invalidates the view to force a redraw
                     //v.invalidate();
