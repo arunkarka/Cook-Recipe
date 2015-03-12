@@ -30,8 +30,9 @@ public class BonusActivity extends Activity{
     private static final String GREEN_CHILLI_TAG = "green_chilli";
     private static final String ONION_TAG = "onion";
     private static final String LIME_TAG = "lime";
+    private static final String SALT_TAG = "salt";
     private HashMap<String, Boolean> ADDED_INGREDIENTS = new HashMap<String, Boolean>();
-    private static final int ALL_INGREDIENTS_COUNT =4;
+    private static final int ALL_INGREDIENTS_COUNT =5;
     private boolean ARE_ALL_INGREDIENTS_ADDED = false;
 
     @Override
@@ -54,6 +55,10 @@ public class BonusActivity extends Activity{
         final ImageView lime = (ImageView)findViewById(R.id.lime_drag);
         lime.setTag(LIME_TAG);
         lime.setOnLongClickListener(new MyDragSetterListener());
+
+        final ImageView salt = (ImageView)findViewById(R.id.salt_drag);
+        salt.setTag(SALT_TAG);
+        salt.setOnLongClickListener(new MyDragSetterListener());
 
         ImageView bowl = (ImageView)findViewById(R.id.bowl_image);
         bowl.setOnDragListener(new MyDragListener());
@@ -141,7 +146,9 @@ public class BonusActivity extends Activity{
                     } else if (dragDataStr.equals(GREEN_CHILLI_TAG)) {
                         findViewById(R.id.green_chilli_drag).setVisibility(View.INVISIBLE);
                     }
-
+                    else if (dragDataStr.equals(SALT_TAG)) {
+                        findViewById(R.id.salt_drag).setVisibility(View.INVISIBLE);
+                    }
 
                     // Invalidates the view to force a redraw
                     //v.invalidate();
