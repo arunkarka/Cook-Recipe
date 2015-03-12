@@ -54,7 +54,7 @@
             android:layout_height="wrap_content"
             android:src="@drawable/ic_lime"/>
         <ImageView
-            android:id="@+id/e"
+            android:id="@+id/salt_drag"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:visibility="visible"
