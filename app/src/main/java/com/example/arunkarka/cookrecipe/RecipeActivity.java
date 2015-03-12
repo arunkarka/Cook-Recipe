@@ -22,6 +22,30 @@ public class RecipeActivity extends Activity {
                 findViewById(R.id.tomato_recipe).setVisibility(View.VISIBLE);
             }
         });
+        findViewById(R.id.unknown1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                findViewById(R.id.green_chilli_recipe).setVisibility(View.VISIBLE);
+            }
+        });
+        findViewById(R.id.unknown2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                findViewById(R.id.onion_recipe).setVisibility(View.VISIBLE);
+            }
+        });
+        findViewById(R.id.lima).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                findViewById(R.id.lime_recipe).setVisibility(View.VISIBLE);
+            }
+        });
+        findViewById(R.id.unknown5).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                findViewById(R.id.salt_recipe).setVisibility(View.VISIBLE);
+            }
+        });
 
 
         findViewById(R.id.bonus_button).setOnClickListener(new View.OnClickListener() {
