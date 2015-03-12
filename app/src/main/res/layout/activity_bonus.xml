@@ -57,14 +57,11 @@
             android:id="@+id/e"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:visibility="invisible"
-            android:src="@drawable/ic_tomato"
-            android:layout_below="@+id/green_chilli_drag"
+            android:visibility="visible"
+            android:src="@drawable/ic_salt_shaker"
+            android:layout_below="@+id/onion_drag"
             android:layout_toRightOf="@+id/green_chilli_drag"
             android:layout_toEndOf="@+id/green_chilli_drag" />
-
-
-
     </RelativeLayout>
     <TextView
         android:id="@+id/good_job"
