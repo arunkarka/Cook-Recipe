@@ -69,6 +69,8 @@ public class BonusActivity extends Activity{
             public void onClick(View v) {
                 if(ARE_ALL_INGREDIENTS_ADDED) {
                     goodJob.setVisibility(View.VISIBLE);
+                    goodJob.setText(R.string.good_job);
+
                 } else {
                     goodJob.setText(getResources().getString(R.string.not_finished));
                     goodJob.setVisibility(View.VISIBLE);
