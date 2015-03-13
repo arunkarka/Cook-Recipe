@@ -80,12 +80,6 @@
             android:text="@string/lime"
             android:textColor="@color/black"/>
         <TextView
-            android:id="@+id/f"
-            android:layout_width="@dimen/text_width"
-            android:layout_height="@dimen/text_height"
-            android:text="@string/garlic"
-            android:textColor="@color/black"/>
-        <TextView
             android:id="@+id/g"
             android:layout_width="@dimen/text_width"
             android:layout_height="@dimen/text_height"
